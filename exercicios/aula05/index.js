@@ -7,17 +7,31 @@
 
 // Exercício 1 — classificarIdade
 export function classificarIdade(idade) {
+  if (idade >=18){
+    return "adulto";
+  } else if (idade >=12 && idade<=17){
+    return "adolescente";
+  }else {
+    return "criança";
+  }
   // escreva seu código aqui
 }
 
 // Exercício 2 — calcularDesconto
 export function calcularDesconto(preco, percentual) {
-  // escreva seu código aqui
-}
+  return preco - (percentual * preco/100);
+  }
+
 
 // Exercício 3 — verificarAprovacao
 export function verificarAprovacao(nota) {
-  // escreva seu código aqui
+  if (nota <=100 && nota >= 60){
+    return "aprovado";
+  }else if (nota < 60 && nota >= 40){
+    return "recuperação";
+  }else {
+    return "aprovado";
+  }
 }
 
 // Exercício 4 — somarPares
