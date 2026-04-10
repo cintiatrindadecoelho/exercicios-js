@@ -14,13 +14,13 @@ export function classificarIdade(idade) {
   }else {
     return "criança";
   }
-  // escreva seu código aqui
+
 }
 
 // Exercício 2 — calcularDesconto
 export function calcularDesconto(preco, percentual) {
   return preco - (percentual * preco/100);
-  }
+}
 
 
 // Exercício 3 — verificarAprovacao
@@ -36,10 +36,24 @@ export function verificarAprovacao(nota) {
 
 // Exercício 4 — somarPares
 export function somarPares(numeros) {
-  // escreva seu código aqui
+   let soma = 0;
+
+  for (let numero of numeros) {
+    if (numero % 2 === 0) {
+      soma += numero;
+    }
+    return soma;
 }
 
 // Exercício 5 — contarLetra
 export function contarLetra(texto, letra) {
-  // escreva seu código aqui
+  let contador = 0;
+  
+  for (const caractere of texto) {
+    if (caractere === letra) {
+      contador++;
+    }
+  }
+
+  return contador;
 }
